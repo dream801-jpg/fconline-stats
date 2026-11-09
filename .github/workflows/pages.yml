@@ -1,0 +1,74 @@
+# 4시간마다 넥슨 API에서 새 경기를 받아 대시보드를 다시 만들고 GitHub Pages에 배포한다.
+# 필요한 설정: 저장소 Secret NEXON_API_KEY (넥슨 오픈 API 키). 키는 로그에도 페이지에도 나오지 않는다.
+# 받은 원본 경기 데이터(data/)는 저장소에 올리지 않고 Actions 캐시에만 둔다 — 다음 실행은 새 경기만 받는다.
+name: 전적 갱신 및 배포
+
+on:
+  schedule:
+    - cron: '17 */4 * * *' # UTC 기준 4시간마다 (한국 시간 01:17, 05:17, 09:17 …)
+  workflow_dispatch: # Actions 탭에서 "Run workflow"로 바로 갱신
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 이전에 받은 경기 캐시 복원
+        uses: actions/cache/restore@v4
+        with:
+          path: data
+          key: fco-data-${{ github.run_id }}
+          restore-keys: fco-data-
+
+      - name: 새 경기 받기 + 대시보드 빌드
+        env:
+          NEXON_API_KEY: ${{ secrets.NEXON_API_KEY }}
+          FC_NICKNAME: 아기잘때리버풀
+          FC_MATCHTYPES: '50,52'
+          FC_MAX_MATCHES: '300'
+          # 개발 키는 하루 1,000회. 첫 실행(캐시 없음)은 약 400회, 이후엔 새 경기 수만큼만 쓴다.
+          FC_CALL_BUDGET: '450'
+        run: node fetch.mjs
+
+      - name: 받은 경기 캐시 저장
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data
+          key: fco-data-${{ github.run_id }}
+
+      - name: 페이지 파일 준비
+        run: |
+          mkdir -p _site
+          cp out/dashboard.html _site/index.html
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

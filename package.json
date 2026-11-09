@@ -1,0 +1,12 @@
+{
+  "name": "fconline-stats",
+  "private": true,
+  "type": "module",
+  "description": "넥슨 오픈 API로 내 FC온라인 전적을 받아 대시보드 HTML로 만든다",
+  "scripts": {
+    "fetch": "node fetch.mjs",
+    "build": "node build.mjs",
+    "mock": "node mock.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

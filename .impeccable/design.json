@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T17:28:46.983Z",
+  "title": "Design System: FC온라인 내 전광판",
+  "extensions": {
+    "colorMeta": {
+      "led-amber": {
+        "role": "primary",
+        "displayName": "LED 앰버",
+        "canonical": "#ffb627",
+        "tonalRamp": [
+          "#402e0a",
+          "#735212",
+          "#a67619",
+          "#d99b21",
+          "#ffb627",
+          "#ffcc68",
+          "#ffde9e",
+          "#fff0d4"
+        ]
+      },
+      "amber-wash": {
+        "role": "primary",
+        "displayName": "앰버 워시",
+        "canonical": "rgba(255,182,39,.12)"
+      },
+      "led-lime": {
+        "role": "secondary",
+        "displayName": "LED 라임",
+        "canonical": "#9be15d",
+        "tonalRamp": [
+          "#273817",
+          "#46652a",
+          "#65923c",
+          "#84bf4f",
+          "#9be15d",
+          "#b9ea8e",
+          "#d2f2b6",
+          "#ebf9df"
+        ]
+      },
+      "led-red": {
+        "role": "secondary",
+        "displayName": "LED 레드",
+        "canonical": "#ff5a4e",
+        "tonalRamp": [
+          "#401714",
+          "#732823",
+          "#a63b33",
+          "#d94d42",
+          "#ff5a4e",
+          "#ff8c83",
+          "#ffb5af",
+          "#ffdedc"
+        ]
+      },
+      "unlit-grey": {
+        "role": "secondary",
+        "displayName": "소등 회색",
+        "canonical": "#6b716c",
+        "tonalRamp": [
+          "#1b1c1b",
+          "#303331",
+          "#464946",
+          "#5b605c",
+          "#6b716c",
+          "#979c98",
+          "#bcbfbd",
+          "#e1e3e2"
+        ]
+      },
+      "grade-bronze": {
+        "role": "tertiary",
+        "displayName": "강화 동",
+        "canonical": "#c98a55",
+        "tonalRamp": [
+          "#322315",
+          "#5a3e26",
+          "#835a37",
+          "#ab7548",
+          "#c98a55",
+          "#d9ad88",
+          "#e7cab3",
+          "#f4e8dd"
+        ]
+      },
+      "grade-silver": {
+        "role": "tertiary",
+        "displayName": "강화 은",
+        "canonical": "#bcc5cc",
+        "tonalRamp": [
+          "#2f3133",
+          "#55595c",
+          "#7a8085",
+          "#a0a7ad",
+          "#bcc5cc",
+          "#d0d6db",
+          "#e1e5e8",
+          "#f2f3f5"
+        ]
+      },
+      "grade-gold": {
+        "role": "tertiary",
+        "displayName": "강화 금",
+        "canonical": "#e9c46a",
+        "tonalRamp": [
+          "#3a311b",
+          "#695830",
+          "#977f45",
+          "#c6a75a",
+          "#e9c46a",
+          "#f0d697",
+          "#f5e4bc",
+          "#fbf3e1"
+        ]
+      },
+      "night-pitch": {
+        "role": "tertiary",
+        "displayName": "야간 피치",
+        "canonical": "#163021",
+        "tonalRamp": [
+          "#060c08",
+          "#0a160f",
+          "#0e1f15",
+          "#13291c",
+          "#163021",
+          "#5c6e64",
+          "#96a29b",
+          "#d0d6d3"
+        ]
+      },
+      "pitch-line": {
+        "role": "tertiary",
+        "displayName": "피치 라인",
+        "canonical": "#2d5c43",
+        "tonalRamp": [
+          "#0b1711",
+          "#14291e",
+          "#1d3c2c",
+          "#264e39",
+          "#2d5c43",
+          "#6c8d7b",
+          "#a1b6aa",
+          "#d5ded9"
+        ]
+      },
+      "board-black": {
+        "role": "neutral",
+        "displayName": "무광 보드 검정",
+        "canonical": "#0b0d0c",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "패널",
+        "canonical": "#151a17",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "panel-raised": {
+        "role": "neutral",
+        "displayName": "한 단 밝은 패널",
+        "canonical": "#1b211d",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "선",
+        "canonical": "#252d28",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "진한 선",
+        "canonical": "#333d37",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "잉크",
+        "canonical": "#f4f1e8",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "옅은 잉크",
+        "canonical": "#cfccc1",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "흐린 잉크",
+        "canonical": "#a19e92",
+        "tonalRamp": [
+          "#0b0d0c",
+          "#151a17",
+          "#1b211d",
+          "#252d28",
+          "#333d37",
+          "#a19e92",
+          "#cfccc1",
+          "#f4f1e8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "scoreboard": {
+        "displayName": "Scoreboard",
+        "purpose": "방금 경기 스코어 하나(폰 84px). LED 도트 마스크."
+      },
+      "led-number": {
+        "displayName": "LED Number",
+        "purpose": "팀 기록·선수 상세·순위표·차트 머리·경기 목록 스코어의 큰 핵심 숫자(22~64px). LED 도트 마스크."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "닉네임, 선택 선수 이름(폰 26px). 구역 제목은 28px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "보드 제목, 방금 경기 팀 이름."
+      },
+      "player-name": {
+        "displayName": "Player Name",
+        "purpose": "순위표 19px, 타임라인 17px, 피치 노드 15px의 선수 이름."
+      },
+      "stat-number": {
+        "displayName": "Stat Number",
+        "purpose": "표 수치·골 분·미터 값(14~20px). 도트 마스크 없음."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "본문·표·설명."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "표 머리 12px, 보조 설명·범례 13px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tooltip",
+        "value": "0 8px 24px rgba(0,0,0,.5)",
+        "purpose": "커서를 따라 뜨는 툴팁에만."
+      },
+      {
+        "name": "selected-ring",
+        "value": "0 0 0 2px #0b0d0c, 0 0 0 4px #ffb627",
+        "purpose": "피치에서 선택된 선수 얼굴의 번짐 없는 이중 링."
+      },
+      {
+        "name": "pitch-name",
+        "value": "text-shadow: 0 1px 2px rgba(0,0,0,.8)",
+        "purpose": "잔디 위 선수 이름 가독성."
+      }
+    ],
+    "motion": [
+      {
+        "name": "relit",
+        "value": "0.64s steps(8), 숫자마다 var(--d) 지연",
+        "purpose": "새로고침으로 값이 바뀐 LED 숫자만 제자리에서 차례로 다시 켜짐. reduced-motion에서 끔."
+      },
+      {
+        "name": "spin",
+        "value": "1s linear infinite",
+        "purpose": "새로고침 진행 중 아이콘 회전."
+      },
+      {
+        "name": "disclose",
+        "value": "transform .12s",
+        "purpose": "경기 행 펼침 화살표 90도 회전."
+      },
+      {
+        "name": "tip-fade",
+        "value": "opacity .08s",
+        "purpose": "툴팁 표시."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-sm",
+        "value": "560px"
+      },
+      {
+        "name": "player-cols",
+        "value": "640px"
+      },
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "match-detail",
+        "value": "760px"
+      },
+      {
+        "name": "grid-2",
+        "value": "960px"
+      },
+      {
+        "name": "squad-2",
+        "value": "1000px"
+      },
+      {
+        "name": "hero-2",
+        "value": "1100px"
+      },
+      {
+        "name": "grid-3",
+        "value": "1200px"
+      },
+      {
+        "name": "container",
+        "value": "1440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "새로고침 버튼 (앰버)",
+      "kind": "button",
+      "refersTo": "button-amber",
+      "description": "화면당 하나뿐인 주 동작. 앰버 바탕·검정 글자.",
+      "html": "<button class=\"ds-btn ds-btn-amber\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 11a8 8 0 1 0-2.3 5.7\"/><path d=\"M20 4v7h-7\"/></svg>새로고침</button>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);border-radius:4px;padding:8px 16px;font:600 14px/1.5 var(--body);cursor:pointer;min-height:40px}.ds-btn:hover{border-color:var(--ink3)}.ds-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}.ds-btn-amber{background:var(--amber);border-color:var(--amber);color:var(--board)}.ds-btn-amber:hover{border-color:var(--amber);filter:brightness(1.08)}"
+    },
+    {
+      "name": "기본 버튼",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "보조 동작(전체 보기 등). 한 단 밝은 패널, 호버 시 테두리만 밝아짐.",
+      "html": "<button class=\"ds-btn\">전체 11명 보기</button>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);border-radius:4px;padding:8px 16px;font:600 14px/1.5 var(--body);cursor:pointer;min-height:40px}.ds-btn:hover{border-color:var(--ink3)}.ds-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "범위 세그먼트",
+      "kind": "nav",
+      "refersTo": "segment-on",
+      "description": "가이드 줄의 범위 전환. 눌린 칸은 앰버.",
+      "html": "<div class=\"ds-seg\"><button aria-pressed=\"false\">최근 20</button><button aria-pressed=\"true\">최근 50</button><button aria-pressed=\"false\">최근 100</button><button aria-pressed=\"false\">전체</button></div>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-seg{display:inline-flex;background:var(--panel);border:1px solid var(--line2);border-radius:4px;padding:2px;font-family:var(--body)}.ds-seg button{border:0;background:transparent;color:var(--ink2);padding:0 12px;min-height:34px;border-radius:3px;cursor:pointer;font-size:13px}.ds-seg button:hover{color:var(--ink)}.ds-seg button[aria-pressed=\"true\"]{background:var(--amber);color:var(--board);font-weight:700}.ds-seg button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "모드 셀렉트",
+      "kind": "input",
+      "refersTo": "input-key",
+      "description": "모드 선택. 40px 높이, 4px 모서리.",
+      "html": "<select class=\"ds-select\"><option>감독모드</option><option>공식경기</option></select>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-select{font:14px var(--body);background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-radius:4px;padding:0 12px;min-height:40px;color-scheme:dark}.ds-select:hover{border-color:var(--ink3)}.ds-select:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "강화 등급 칩",
+      "kind": "chip",
+      "refersTo": "grade-gold",
+      "description": "+1 회색, +2~4 동, +5~7 은, +8 이상 금.",
+      "html": "<span class=\"ds-g\">+1</span> <span class=\"ds-g ds-bronze\">+3</span> <span class=\"ds-g ds-silver\">+6</span> <span class=\"ds-g ds-gold\">+8</span>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-g{display:inline-block;font:700 13px/18px var(--num);border-radius:3px;padding:0 6px;color:var(--board);background:var(--line2)}.ds-bronze{background:var(--bronze)}.ds-silver{background:var(--silver)}.ds-gold{background:var(--gold)}"
+    },
+    {
+      "name": "최근 경기 결과 칩",
+      "kind": "chip",
+      "refersTo": "pip-win",
+      "description": "색과 승/무/패 글자를 항상 함께.",
+      "html": "<div class=\"ds-pips\"><button class=\"ds-pip ds-W\">승</button><button class=\"ds-pip ds-D\">무</button><button class=\"ds-pip ds-L\">패</button></div>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-pips{display:flex;gap:4px}.ds-pip{width:36px;height:32px;border:0;border-radius:3px;display:grid;place-items:center;font:700 13px var(--body);cursor:pointer;padding:0}.ds-W{background:var(--win);color:var(--board)}.ds-D{background:var(--draw);color:var(--ink)}.ds-L{background:var(--loss);color:var(--board)}.ds-pip:hover{filter:brightness(1.12)}.ds-pip:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "보드 + LED 스코어",
+      "kind": "card",
+      "refersTo": "board",
+      "description": "평면 패널 보드와 시그니처 LED 도트 숫자.",
+      "html": "<section class=\"ds-board\"><div class=\"ds-bhead\"><h2 class=\"ds-bh\">방금 경기</h2><span class=\"ds-bsub\">11.09 22:36</span></div><div class=\"ds-led\">1:1</div><p class=\"ds-res\">무 · 점유율 57%</p></section>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-board{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 24px;color:var(--ink);font:14px/1.5 var(--body)}.ds-bhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}.ds-bh{font:400 24px/1.2 var(--disp);margin:0}.ds-bsub{font-size:13px;color:var(--ink3)}.ds-led{font:700 112px/1 var(--num);color:var(--amber);letter-spacing:.02em;text-align:center;font-variant-numeric:tabular-nums;-webkit-mask:radial-gradient(circle,#000 58%,transparent 63%) 0 0/4px 4px;mask:radial-gradient(circle,#000 58%,transparent 63%) 0 0/4px 4px;}.ds-res{text-align:center;font-size:13px;color:var(--ink2);margin:4px 0 0}"
+    },
+    {
+      "name": "득점 순위 행",
+      "kind": "custom",
+      "refersTo": "board",
+      "description": "선택 행은 앰버 워시, 이름은 간판체, 핵심 수치는 LED.",
+      "html": "<table class=\"ds-lead\"><tr class=\"ds-sel\"><td class=\"ds-rk\">1</td><td class=\"ds-l\"><span class=\"ds-pname\">루이스 수아레스</span><span class=\"ds-g\">+8</span></td><td><span class=\"ds-led\">21</span></td><td><span class=\"ds-led ds-ap\">32</span></td></tr><tr><td class=\"ds-rk\">2</td><td class=\"ds-l\"><span class=\"ds-pname\">D. 소보슬라이</span><span class=\"ds-g\">+8</span></td><td><span class=\"ds-led\">12</span></td><td><span class=\"ds-led ds-ap\">32</span></td></tr></table>",
+      "css": ":host{--board:#0b0d0c;--panel:#151a17;--panel2:#1b211d;--line:#252d28;--line2:#333d37;--ink:#f4f1e8;--ink2:#cfccc1;--ink3:#a19e92;--amber:#ffb627;--amber-wash:rgba(255,182,39,.12);--win:#9be15d;--loss:#ff5a4e;--draw:#6b716c;--pitch:#163021;--pitchline:#2d5c43;--bronze:#c98a55;--silver:#bcc5cc;--gold:#e9c46a;--disp:\"Do Hyeon\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;--num:\"Barlow Condensed\",\"Malgun Gothic\",sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Malgun Gothic\",\"Apple SD Gothic Neo\",sans-serif;} .ds-lead{border-collapse:collapse;background:var(--panel);color:var(--ink);font:14px var(--body)}.ds-lead td{padding:8px;border-top:1px solid var(--line);text-align:right;vertical-align:middle}.ds-lead td.ds-l,.ds-lead td.ds-rk{text-align:left}.ds-lead tr:hover td{background:var(--panel2)}.ds-lead tr.ds-sel td{background:var(--amber-wash)}.ds-rk{font:700 20px var(--num);color:var(--ink3);width:32px}.ds-pname{font:400 19px/1.2 var(--disp)}.ds-g{display:inline-block;font:700 13px/18px var(--num);border-radius:3px;padding:0 6px;color:var(--board);background:var(--gold);margin-left:4px;vertical-align:2px}.ds-led{font:700 32px/1 var(--num);color:var(--amber);font-variant-numeric:tabular-nums;-webkit-mask:radial-gradient(circle,#000 58%,transparent 63%) 0 0/4px 4px;mask:radial-gradient(circle,#000 58%,transparent 63%) 0 0/4px 4px;}.ds-ap{font-size:40px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "야간 경기 전광판",
+    "overview": "화면 전체가 불 꺼진 경기장의 무광 검정 전광판이다. 바탕은 거의 검정에 가까운 녹빛 검정이고, 그 위에 한 단 밝은 패널이 보드처럼 놓인다. 빛은 숫자에서만 난다: 득점·도움·공격P·스코어 같은 큰 숫자가 LED 앰버로 켜지고, 4px 도트 마스크가 그 숫자를 전광판 픽셀로 만든다. 나머지는 모두 조용한 따뜻한 회백색 글자와 1px 선이다.\n\n밀도는 높지만 질서가 있다. 보드는 8px 모서리의 평면 사각형이고, 그 안의 표·미터·타임라인은 1px 구분선으로만 나뉜다. 그림자·광택·유리·장식 그라데이션은 쓰지 않는다. 피치는 투광등 아래 어두운 잔디색 평면이고, 선수 카드의 강화 등급만 동·은·금의 평면 칩으로 게임 언어를 가져온다.\n\n색은 의미를 진다. 앰버는 \"내 쪽·지금 선택한 것\", 레드는 \"상대·패\", 라임은 \"승\", 소등 회색은 \"무\"다. 결과 색은 언제나 승/무/패 글자와 함께 나온다.",
+    "keyCharacteristics": [
+      "다크 전용(`color-scheme: dark`), 라이트 모드 없음",
+      "LED 도트 숫자는 큰 숫자에만, 작은 수치는 같은 콘덴스드 서체의 평문",
+      "간판체(Do Hyeon) 제목·선수 이름, 콘덴스드(Barlow Condensed) 숫자, 시스템 한글 본문",
+      "4px 도트 피치 간격 모듈",
+      "평면 보드, 1px 선, 그림자·그라데이션·광택 없음",
+      "새로고침으로 바뀐 LED 숫자만 제자리에서 차례로 다시 켜짐"
+    ],
+    "rules": [
+      {
+        "name": "내 편·상대 규칙",
+        "body": "앰버는 내 쪽과 선택, 레드는 상대와 패. 같은 화면에서 이 의미를 뒤집지 않는다(예: 상대 데이터를 앰버로 칠하지 않는다).",
+        "section": "colors"
+      },
+      {
+        "name": "글자 병기 규칙",
+        "body": "승·무·패 색은 단독으로 나오지 않는다. 칩·표·범례 어디서든 \"승/무/패\" 글자가 같이 있어야 한다.",
+        "section": "colors"
+      },
+      {
+        "name": "등급 문턱 규칙",
+        "body": "강화 등급 칩 색은 +2~4 동, +5~7 은, +8 이상 금, +1은 진한 선 회색이다. 이 문턱을 바꾸지 않는다.",
+        "section": "colors"
+      },
+      {
+        "name": "큰 숫자만 켠다 규칙",
+        "body": "LED 도트 마스크는 22px 이상, 화면의 핵심 숫자에만 쓴다. 표 안의 작은 수치·라벨·본문에는 절대 씌우지 않는다. 도트가 작은 글자를 먹으면 읽히지 않는다.",
+        "section": "typography"
+      },
+      {
+        "name": "간판체는 이름에만 규칙",
+        "body": "Do Hyeon은 닉네임·제목·선수/팀 이름에만 쓰고, 문장·설명·숫자에는 쓰지 않는다.",
+        "section": "typography"
+      },
+      {
+        "name": "평면 보드 규칙",
+        "body": "보드와 카드에는 그림자를 주지 않는다. 위로 뜨는 것은 툴팁뿐이다.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 다크 전용으로 만든다. `color-scheme: dark`를 선언하고 라이트 변형을 만들지 않는다.",
+      "Do 큰 핵심 숫자(22px 이상)에만 LED 도트 마스크를 씌우고, 기본 색은 LED 앰버로 한다.",
+      "Do 모든 간격을 4px 배수로 잡는다(4·8·12·16·20·24·32·48·64).",
+      "Do 앰버는 내 쪽·선택·주 동작, 레드는 상대·패로 쓴다.",
+      "Do 승·무·패 색 옆에 항상 승/무/패 글자를 둔다.",
+      "Do 강화 등급 칩은 +2~4 동, +5~7 은, +8 이상 금으로 칠한다.",
+      "Do 제목·이름은 Do Hyeon, 숫자는 Barlow Condensed 고정폭, 문장은 시스템 한글로 쓰고 웹폰트 실패 시 Malgun Gothic/Apple SD Gothic Neo로 떨어지게 한다.",
+      "Do 터치 목표를 40px 이상으로, 포커스는 2px 앰버 외곽선으로 보인다.",
+      "Do 새로고침 애니메이션은 바뀐 값에만 적용하고 `prefers-reduced-motion`에서 끈다."
+    ],
+    "donts": [
+      "Don't 보드·카드에 그림자, 글로우, 광택, 유리(backdrop-filter), 장식 그라데이션을 넣지 않는다.",
+      "Don't 표 수치·라벨·본문 같은 작은 글자에 LED 도트 마스크를 씌우지 않는다.",
+      "Don't 승·무·패를 색만으로 구분하지 않는다.",
+      "Don't 흐린 잉크보다 더 옅은 글자색을 만들지 않는다(AA 대비).",
+      "Don't 넥슨·EA 로고나 상표, 공식 사이트처럼 보이는 장치를 흉내 내지 않는다.",
+      "Don't 같은 정보를 한 화면에 두 번 표기하지 않는다."
+    ]
+  }
+}
